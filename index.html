@@ -21,6 +21,30 @@
 				opacity: 0.8;
 				animation: flash 1.5s infinite;
 			}
+			#header {
+				display: flex;
+				align-items: center;
+				padding: 10px 20px;
+				background: #000; /* Adjust background color */
+				height: 60px; /* Set a fixed height for the header */
+			}
+
+			#logo {
+				height: 100%; /* Makes the logo match the header height */
+				max-height: 50px; /* Adjust max-height to prevent it from getting too large */
+				width: auto; /* Maintain aspect ratio */
+				margin-right: 15px; /* Space between logo and title */
+			}
+
+			#header h1 {
+				margin: 0;
+				font-size: 24px;
+				color: white;
+			}
+
+			#nav {
+				margin-left: auto; /* Pushes navigation to the right */
+			}
 
 			
 		</style>
@@ -33,23 +57,23 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-			<header id="header" class="alt">
-				<h1><a href="index.html">AGHAERONAUTICS</a></h1>
-				<nav id="nav">
-					<ul>
-						<li class="special">
-							<a href="#menu" class="menuToggle"><span>Menu</span></a>
-							<div id="menu">
-								<ul>
-									<li><a href="index.html">Home</a></li>
-									<li><a href="#">Sign Up</a></li>
-									<li><a href="#">Log In</a></li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</nav>
-			</header>
+				<header id="header" class="alt">
+					<img src="assets/css/images/logoblackbackground.png" alt="Logo" id="logo">
+					<nav id="nav">
+						<ul>
+							<li class="special">
+								<a href="#menu" class="menuToggle"><span>Menu</span></a>
+								<div id="menu">
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="#">Sign Up</a></li>
+										<li><a href="#">Log In</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</header>
 
 			<!-- Banner -->
 	
